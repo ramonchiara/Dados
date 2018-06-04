@@ -5,6 +5,7 @@ namespace Dados
 	public class Dado
 	{
 		private int lados;
+		private Random rng = new Random();
 
 		public Dado(int lados)
 		{
@@ -13,7 +14,6 @@ namespace Dados
 
 		public int Lancar()
 		{
-			Random rng = new Random();
 			return rng.Next(1, lados + 1);
 		}
 	}
