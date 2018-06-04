@@ -5,7 +5,7 @@ namespace Dados
 	public class Dado
 	{
 		private int lados;
-		private Random rng = new Random();
+		private static Random rng = new Random();
 
 		public Dado(int lados)
 		{
